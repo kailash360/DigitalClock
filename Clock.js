@@ -23,7 +23,7 @@ setInterval(() => {
 
     document.getElementById('IndTime').innerHTML = hours + ":" + mins + ":" + secs + " " + mer;
     document.getElementById('IndDate').innerHTML = d.getDate() + " " + months[d.getMonth()] + "," + d.getFullYear();
-    document.getElementById('IndDay').innerHTML = days[d.getDay() + 1];
+    document.getElementById('IndDay').innerHTML = days[d.getDay()];
 }, 1000)
 
 // for GMT 
@@ -48,5 +48,5 @@ setInterval(() => {
 
     document.getElementById('UTCTime').innerHTML = hours + ":" + mins + ":" + secs + " " + mer;
     document.getElementById('UTCDate').innerHTML = d.getUTCDate() + " " + months[d.getUTCMonth()] + "," + d.getUTCFullYear();
-    document.getElementById('UTCDay').innerHTML = days[d.getUTCDay() + 1];
+    document.getElementById('UTCDay').innerHTML = days[d.getUTCDay()];
 }, 1000)
